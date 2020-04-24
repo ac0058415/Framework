@@ -20,6 +20,7 @@ public class LoginFacebook extends BaseClass {
 	public void loginFacebook() {
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		loginPage.loginToFacebook(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 1));
+		System.out.println("Logged in");
 		Helper.captureScreenshot(driver);
 	}
 
