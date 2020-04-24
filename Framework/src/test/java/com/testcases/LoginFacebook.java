@@ -22,6 +22,7 @@ public class LoginFacebook extends BaseClass {
 		loginPage.loginToFacebook(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 1));
 		System.out.println("Logged in");
 		Helper.captureScreenshot(driver);
+		
 	}
 
 }
